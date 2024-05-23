@@ -344,6 +344,11 @@ export const Container = React.memo(
           getCurrentIndex: () => {
             return index.value
           },
+          setScrollEnabled: (enabled) => {
+            if (containerRef.current) {
+              containerRef.current.setScrollEnabled(enabled);
+            }
+          },
         }),
         // eslint-disable-next-line react-hooks/exhaustive-deps
         [onTabPress]
