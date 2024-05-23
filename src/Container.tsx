@@ -346,7 +346,7 @@ export const Container = React.memo(
           },
           setScrollEnabled: (enabled: boolean) => {
             if (containerRef.current) {
-              containerRef.current.setScrollEnabled(enabled);
+              containerRef.current.setScrollEnabled(enabled)
             }
           },
         }),
